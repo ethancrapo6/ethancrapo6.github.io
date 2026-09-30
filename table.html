@@ -1,6 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <a href="index.html">Home</a>
-    <a href="style.html">Style</a>
-    <a href="table.html">Table</a>
+    <head>
+        <title>My Table</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <script>
+            window.addEventListener('pageshow', function (event) {
+                if (event.persisted) {
+                    window.location.reload();
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to My Table</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="style.html">Style</a>
+            <a href="table.html">Table</a>
+            <a href="form.html">Form</a>
+        </nav>
+
+        <table border="1" cellpadding="10" cellspacing="5">
+            <tr bgcolor="blue" height="50">
+                <th width="200" align="left">Person</th>
+                <th width="100" colspan="2">Height</th>
+                <th width="200">Dept</th>
+            </tr>
+            <tr style="background-color: rgb(95, 182, 216); color: rgb(253, 255, 255); font-family: Arial, sans-serif;">
+                <td rowspan="2">IT</td>
+                <td>Alice Smith Jr.</td>
+                <td align="center">5'4"</td>
+                <td>content</td>
+            </tr>
+            <tr>
+                <td>Bob Johnson</td>
+                <td align="center" colspan="2">6'1"</td>
+            </tr>
+            <tr>
+                <td>Charlie Brown</td>
+                <td align="center">5'9"</td>
+                <td>content</td>
+            </tr>
+        </table>
+    </body>
 </html>
